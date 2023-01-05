@@ -42,14 +42,14 @@
             this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.boldToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.blueTextToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.redTextToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.textColor = new System.Windows.Forms.ToolStripMenuItem();
+            this.BackgroundColor = new System.Windows.Forms.ToolStripMenuItem();
             this.italicToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.textBox1 = new System.Windows.Forms.RichTextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,8 +62,8 @@
             this.viewToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 3, 0, 3);
-            this.menuStrip1.Size = new System.Drawing.Size(1200, 40);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 4, 0, 4);
+            this.menuStrip1.Size = new System.Drawing.Size(1200, 42);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -106,6 +106,7 @@
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
             this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(203, 40);
             this.saveAsToolStripMenuItem.Text = "Save As";
+            this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
@@ -117,6 +118,7 @@
             this.idToolStripMenuItem.Name = "idToolStripMenuItem";
             this.idToolStripMenuItem.Size = new System.Drawing.Size(203, 40);
             this.idToolStripMenuItem.Text = "Exit";
+            this.idToolStripMenuItem.Click += new System.EventHandler(this.idToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -133,25 +135,28 @@
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
             this.cutToolStripMenuItem.Size = new System.Drawing.Size(180, 40);
             this.cutToolStripMenuItem.Text = "Cut";
+            this.cutToolStripMenuItem.Click += new System.EventHandler(this.cutToolStripMenuItem_Click);
             // 
             // copyToolStripMenuItem
             // 
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
             this.copyToolStripMenuItem.Size = new System.Drawing.Size(180, 40);
             this.copyToolStripMenuItem.Text = "Copy";
+            this.copyToolStripMenuItem.Click += new System.EventHandler(this.copyToolStripMenuItem_Click);
             // 
             // pasteToolStripMenuItem
             // 
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
             this.pasteToolStripMenuItem.Size = new System.Drawing.Size(180, 40);
             this.pasteToolStripMenuItem.Text = "Paste";
+            this.pasteToolStripMenuItem.Click += new System.EventHandler(this.pasteToolStripMenuItem_Click);
             // 
             // viewToolStripMenuItem
             // 
             this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.boldToolStripMenuItem,
-            this.blueTextToolStripMenuItem,
-            this.redTextToolStripMenuItem,
+            this.textColor,
+            this.BackgroundColor,
             this.italicToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(75, 34);
@@ -160,49 +165,53 @@
             // boldToolStripMenuItem
             // 
             this.boldToolStripMenuItem.Name = "boldToolStripMenuItem";
-            this.boldToolStripMenuItem.Size = new System.Drawing.Size(214, 40);
+            this.boldToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
             this.boldToolStripMenuItem.Text = "Bold";
+            this.boldToolStripMenuItem.Click += new System.EventHandler(this.boldToolStripMenuItem_Click);
             // 
-            // blueTextToolStripMenuItem
+            // textColor
             // 
-            this.blueTextToolStripMenuItem.Name = "blueTextToolStripMenuItem";
-            this.blueTextToolStripMenuItem.Size = new System.Drawing.Size(214, 40);
-            this.blueTextToolStripMenuItem.Text = "Blue Text";
+            this.textColor.Name = "textColor";
+            this.textColor.Size = new System.Drawing.Size(315, 40);
+            this.textColor.Text = "Text Color";
+            this.textColor.Click += new System.EventHandler(this.textColor_Click);
             // 
-            // redTextToolStripMenuItem
+            // BackgroundColor
             // 
-            this.redTextToolStripMenuItem.Name = "redTextToolStripMenuItem";
-            this.redTextToolStripMenuItem.Size = new System.Drawing.Size(214, 40);
-            this.redTextToolStripMenuItem.Text = "Red Text";
+            this.BackgroundColor.Name = "BackgroundColor";
+            this.BackgroundColor.Size = new System.Drawing.Size(315, 40);
+            this.BackgroundColor.Text = "Background color";
+            this.BackgroundColor.Click += new System.EventHandler(this.BackgroundColor_Click);
             // 
             // italicToolStripMenuItem
             // 
             this.italicToolStripMenuItem.Name = "italicToolStripMenuItem";
-            this.italicToolStripMenuItem.Size = new System.Drawing.Size(214, 40);
+            this.italicToolStripMenuItem.Size = new System.Drawing.Size(315, 40);
             this.italicToolStripMenuItem.Text = "Italic";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(18, 36);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(1162, 619);
-            this.textBox1.TabIndex = 1;
+            this.italicToolStripMenuItem.Click += new System.EventHandler(this.italicToolStripMenuItem_Click);
             // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(12, 54);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(1177, 610);
+            this.textBox1.TabIndex = 1;
+            this.textBox1.Text = "";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 675);
+            this.ClientSize = new System.Drawing.Size(1200, 676);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Text = "Untitled - Notepad";
             this.menuStrip1.ResumeLayout(false);
@@ -228,13 +237,13 @@
         private ToolStripMenuItem pasteToolStripMenuItem;
         private ToolStripMenuItem viewToolStripMenuItem;
         private ToolStripMenuItem boldToolStripMenuItem;
-        private ToolStripMenuItem blueTextToolStripMenuItem;
-        private ToolStripMenuItem redTextToolStripMenuItem;
+        private ToolStripMenuItem textColor;
+        private ToolStripMenuItem BackgroundColor;
         private ToolStripMenuItem italicToolStripMenuItem;
-        private TextBox textBox1;
         private OpenFileDialog openFileDialog1;
         private SaveFileDialog saveFileDialog1;
         private ColorDialog colorDialog1;
         private FontDialog fontDialog1;
+        private RichTextBox textBox1;
     }
 }
