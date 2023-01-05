@@ -1,0 +1,17 @@
+C:\Users\Mhamz\source\repos\Notepad\bin\Debug\net6.0-windows\Notepad.exe
+C:\Users\Mhamz\source\repos\Notepad\bin\Debug\net6.0-windows\Notepad.deps.json
+C:\Users\Mhamz\source\repos\Notepad\bin\Debug\net6.0-windows\Notepad.runtimeconfig.json
+C:\Users\Mhamz\source\repos\Notepad\bin\Debug\net6.0-windows\Notepad.dll
+C:\Users\Mhamz\source\repos\Notepad\bin\Debug\net6.0-windows\Notepad.pdb
+C:\Users\Mhamz\source\repos\Notepad\obj\Debug\net6.0-windows\Notepad.csproj.AssemblyReference.cache
+C:\Users\Mhamz\source\repos\Notepad\obj\Debug\net6.0-windows\Notepad.Form1.resources
+C:\Users\Mhamz\source\repos\Notepad\obj\Debug\net6.0-windows\Notepad.csproj.GenerateResource.cache
+C:\Users\Mhamz\source\repos\Notepad\obj\Debug\net6.0-windows\Notepad.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mhamz\source\repos\Notepad\obj\Debug\net6.0-windows\Notepad.AssemblyInfoInputs.cache
+C:\Users\Mhamz\source\repos\Notepad\obj\Debug\net6.0-windows\Notepad.AssemblyInfo.cs
+C:\Users\Mhamz\source\repos\Notepad\obj\Debug\net6.0-windows\Notepad.csproj.CoreCompileInputs.cache
+C:\Users\Mhamz\source\repos\Notepad\obj\Debug\net6.0-windows\Notepad.dll
+C:\Users\Mhamz\source\repos\Notepad\obj\Debug\net6.0-windows\refint\Notepad.dll
+C:\Users\Mhamz\source\repos\Notepad\obj\Debug\net6.0-windows\Notepad.pdb
+C:\Users\Mhamz\source\repos\Notepad\obj\Debug\net6.0-windows\Notepad.genruntimeconfig.cache
+C:\Users\Mhamz\source\repos\Notepad\obj\Debug\net6.0-windows\ref\Notepad.dll
